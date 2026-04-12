@@ -13,12 +13,14 @@ body {
     background: #fff;
     border: 3px solid #075A27;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 h1,h2 {
     color: #075A27;
 }
-
+.summary {
+    margin-left: 10px;
+}
 .header h1 {
     margin: 10px 0;
 }
@@ -31,12 +33,14 @@ h1,h2 {
     color: #106531;
     text-decoration: none;
 }
-
 .head-link {
     text-decoration: none;
     color:#106531;
 }
-
+.head-link:hover {
+    color:#1caa53;
+    text-decoration: underline;
+}
 .section {
     margin: 20px 0;
 }
@@ -54,8 +58,12 @@ h1,h2 {
     color: #555;
 }
 .item p {
-    margin: 5px 0;
+    margin: 4px 0;
     font-size: 14px;
+    margin-left: 6px;
+}
+.italics {
+    font-size: 16px;
 }
 .transition {
     color: #106531;
@@ -64,6 +72,7 @@ h1,h2 {
 .skills ul {
     list-style: none;
     padding: 0;
+    margin-left: 10px;
 }
 .skills ul li {
     display: inline-block;
@@ -72,4 +81,9 @@ h1,h2 {
     padding: 5px 10px;
     margin: 5px 5px 5px 0;
     border-radius: 2px;
+}
+.footer {
+    margin-top: 10px;
+    border-top: 2px solid #075A27;
+    padding-top: 15px;
 }
