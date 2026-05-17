@@ -1,0 +1,32 @@
+@import url("./styles.css");
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.photo {
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+.about {
+    flex: 2;
+}
+
+@media (min-width: 400px) {
+    .content {
+        flex-flow: row nowrap;
+    }
+    .photo {
+        width: 40%;
+    }
+}

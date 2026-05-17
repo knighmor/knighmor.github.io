@@ -24,6 +24,9 @@ h1,h2 {
 .header h1 {
     margin: 10px 0;
 }
+.header {
+    margin-bottom: 40px;
+}
 .contact {
     margin: 10px 0;
     margin-left: 20px;
@@ -82,8 +85,30 @@ h1,h2 {
     margin: 5px 5px 5px 0;
     border-radius: 2px;
 }
-.footer {
-    margin-top: 10px;
+.flexer {
+    display:flex;
+    flex-flow: column-reverse nowrap;
+    gap: 2rem;
+}
+.content {
+    flex: 2;
+}
+.nav-sidebar {
+    flex: 1;
     border-top: 2px solid #075A27;
-    padding-top: 15px;
+    border-bottom: 2px solid #075A27;
+}
+
+@media (min-width: 400px) {
+    .header {
+        margin-bottom: 0px;
+    }
+    .flexer {
+        flex-flow: row nowrap;
+    }
+    .nav-sidebar {
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 2px solid #075A27;    
+    }
 }
