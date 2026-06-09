@@ -1,3 +1,4 @@
+/* #region Main Bullshit */
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
@@ -27,15 +28,6 @@ h1,h2 {
 .header {
     margin-bottom: 40px;
 }
-.contact {
-    margin: 10px 0;
-    margin-left: 20px;
-    font-size: 14px;
-}
-.contact a {
-    color: #106531;
-    text-decoration: none;
-}
 .head-link {
     text-decoration: none;
     color:#106531;
@@ -44,6 +36,9 @@ h1,h2 {
     color:#1caa53;
     text-decoration: underline;
 }
+/* #endregion */
+
+/* #region General Specifics */
 .section {
     margin: 20px 0;
 }
@@ -72,6 +67,34 @@ h1,h2 {
     color: #106531;
     margin-left: 5px;
 }
+/* #endregion */
+
+/* #region Cutting Up the Main Content? */
+.flexer {
+    display:flex;
+    flex-flow: column-reverse nowrap;
+    gap: 2rem;
+}
+#content {
+    flex: 2;
+}
+.nav-sidebar {
+    flex: 1;
+    border-top: 2px solid #075A27;
+    border-bottom: 2px solid #075A27;
+}
+/* #endregion */
+
+/* #region Resume Bits */
+.contact {
+    margin: 10px 0;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.contact a {
+    color: #106531;
+    text-decoration: none;
+}
 .skills ul {
     list-style: none;
     padding: 0;
@@ -85,19 +108,18 @@ h1,h2 {
     margin: 5px 5px 5px 0;
     border-radius: 2px;
 }
-.flexer {
-    display:flex;
-    flex-flow: column-reverse nowrap;
-    gap: 2rem;
+/* #endregion */
+
+/* #region Projects Formatting */
+.dates {
+    font-style: italic;
 }
-.content {
-    flex: 2;
+.details {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 95%;
 }
-.nav-sidebar {
-    flex: 1;
-    border-top: 2px solid #075A27;
-    border-bottom: 2px solid #075A27;
-}
+/* #endregion */
 
 @media (min-width: 400px) {
     .header {
